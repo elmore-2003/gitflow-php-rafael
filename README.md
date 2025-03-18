@@ -44,6 +44,29 @@
     git push origin develop
 
 3. Modificación de un archivo existente
-4. Resolución de conflictos
-5. Eliminación de un archivo
-6. Publicación de la versión final
+
+  # Creamos la nueva funcionalidad
+
+    git flow feature start modificar-index
+
+  # Creamos el archivo index.php con el siguiente contenido:
+
+    <?php
+    include "alumnos/tu_nombre.php";
+    ?>
+
+  # Ver cambios antes de confirmar con el siguiente comando:
+
+    git diff
+
+  # Subimos los cambios:
+
+    git add index.php
+    git commit -m "modificar index.php"
+    git flow feature finish modificar-index
+    git push origin develop
+
+   
+5. Resolución de conflictos
+6. Eliminación de un archivo
+7. Publicación de la versión final
