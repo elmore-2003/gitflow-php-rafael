@@ -67,6 +67,24 @@
     git push origin develop
 
    
-5. Resolución de conflictos
+4. Resolución de conflictos
+
+  # Modificamos el index en la misma línea que un compañero
+
+  # Intentar hacer el merge en develop
+
+    git checkout develop
+    git merge feature/modificar-index
+
+  # Resolver conflicto manualmente 
+
+    buscamos las marcas <<<<<<<, ======= y >>>>>>> y lo edítamos correctamente.
+
+  # Subimos los cambios:
+
+    git add index.php
+    git commit -m "Resolver conflicto en index.php"
+    git push origin develop
+  
 6. Eliminación de un archivo
 7. Publicación de la versión final
