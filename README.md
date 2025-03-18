@@ -104,3 +104,15 @@
     git push origin develop
    
 6. Publicación de la versión final
+
+  # Creamos una release con el siguiente comando:
+
+    git flow release start v1.0
+
+  # Finalizamos la release y la fusionamos en main
+
+    git flow release finish v1.0
+    git push origin main
+    git push --tagsS
+  
+    
