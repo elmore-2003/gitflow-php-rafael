@@ -86,5 +86,21 @@
     git commit -m "Resolver conflicto en index.php"
     git push origin develop
   
-6. Eliminación de un archivo
-7. Publicación de la versión final
+5. Eliminación de un archivo
+
+  # Implementamos una nueva funcinalidad
+
+    git flow feature start borrar-mi-archivo
+
+  # Eliminamos el archivo php
+
+    rm alumnos/rafael.php
+    git add .
+    git commit -m "Eliminar mi archivo PHP en alumnos/"
+
+  # Finalizamos y subimos la funcinalidad
+
+    git flow feature finish borrar-mi-archivo
+    git push origin develop
+   
+6. Publicación de la versión final
