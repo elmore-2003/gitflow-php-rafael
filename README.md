@@ -25,7 +25,7 @@
   
 2. Creación de un archivo php
 
-  # Creamos la nueva funcinalidad con el siguiente comando ¡:
+  # Creamos la nueva funcinalidad con el siguiente comando:
   
     git flow feature start crear-mi-archivo
   
